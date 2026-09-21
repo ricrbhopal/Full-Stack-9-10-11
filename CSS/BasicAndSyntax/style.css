@@ -1,15 +1,19 @@
 * {
-  background-color: #364187;
+  background-color: aliceblue;
 }
 
 .kuchbhi {
-  background-color: rgb(239, 209, 12);
+  background-color: blueviolet;
 }
 
-#submitButton {
-  background-color: greenyellow;
+#fullName {
+  background-color: bisque;
 }
 
 h1 {
-  background-color: #364187;
+  background-color: aquamarine;
+}
+
+#submitButton {
+  background-color: blue;
 }
