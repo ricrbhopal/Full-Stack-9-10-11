@@ -44,3 +44,22 @@ body {
   background-color: #01ff0d;
   color: white;
 }
+
+.main:hover {
+  background-color: red;
+}
+
+#name {
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+#name:hover {
+  background-color: #c0f7c3;
+}
+
+#name:focus {
+  outline: none;
+  border: 1px solid #01ff0d;
+  /* outline-color: #01ff0d; */
+}

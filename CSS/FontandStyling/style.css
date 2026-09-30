@@ -103,6 +103,10 @@ ul {
   tbody tr:nth-child(odd) {
     background-color: #b0e5f8;
   }
+
+  tbody tr:nth-child(3){
+ background-color: #ff8000;
+  }
 }
 
 footer {
