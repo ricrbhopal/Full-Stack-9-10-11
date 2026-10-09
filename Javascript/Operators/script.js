@@ -72,3 +72,59 @@ do {
   console.log("We are learning JavaScript do-while loop", i + 1);
   i++;
 } while (i <= 5);
+
+console.log("1. Check Balance");
+console.log("2. Withdraw Money");
+console.log("3. Mini Statement");
+console.log("4. Pin change");
+console.log("5. Deposit Cash");
+console.log("6. exit");
+
+let Choice = 4;
+
+switch (Choice) {
+  case 1: {
+    console.log("Checking Your Balance");
+    break;
+  }
+  case 2: {
+    console.log("Please Collect your Cash");
+    break;
+  }
+  case 3: {
+    console.log("Please find your transaction below");
+    break;
+  }
+  case 4: {
+    console.log("Enter your new Pin");
+    break;
+  }
+  case 5: {
+    console.log("Put your Cash Into Machine");
+    break;
+  }
+  case 6: {
+    console.log("Thank you for");
+    break;
+  }
+  default: {
+    console.log("Wrong Choice");
+  }
+}
+
+Choice = 3;
+if (Choice === 1) {
+  console.log("Checking Your Balance");
+} else if (Choice === 2) {
+  console.log("Please Collect your Cash");
+} else if (Choice === 3) {
+  console.log("Please find your transaction below");
+} else if (Choice === 4) {
+  console.log("Enter your new Pin");
+} else if (Choice === 5) {
+  console.log("Put your Cash Into Machine");
+} else if (Choice === 6) {
+  console.log("Thank you for");
+} else {
+  console.log("Wrong Choice");
+}
