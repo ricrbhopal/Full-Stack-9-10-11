@@ -35,6 +35,14 @@ TestFrom.addEventListener("submit", (e) => {
 
   const testFromData = new FormData(TestFrom);
 
+  if (testFromData.get("password").length < 8) {
+    document.getElementById("passwordError").innerText =
+      "Password Must Contain 8 Charcaters";
+  }
+  if (testFromData.get("password") !== testFromData.get("cfpassword")) {
+    document.getElementById("cfPasswordError").innerText = "Password Not Match";
+  }
+
   testFromData.forEach((value, key) => console.log(key, ":", value));
 
   testFromData.forEach((value, key) => (testFromDataJSON[key] = value));
@@ -42,3 +50,26 @@ TestFrom.addEventListener("submit", (e) => {
 
 console.log(testFromDataJSON);
 
+const someData = {
+  name: "Prince Patel",
+  age: "21",
+  height: 5.6,
+};
+
+const JsonToString = JSON.stringify(someData);
+
+console.log(someData);
+
+console.log(JsonToString);
+
+const StringToJson = JSON.parse(JsonToString);
+
+console.log(StringToJson);
+
+var StdName = "Mansi";
+var marks = 99;
+
+console.log("Student with Name", StdName, "Scored", marks);
+
+console.log(`Studnet with Name ${StdName} 
+  scored ${marks}`);
